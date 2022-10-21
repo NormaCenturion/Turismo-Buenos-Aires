@@ -96,16 +96,18 @@ max-height: 200px;
 max-width: 100%;
 }
 
-#boton{
+#button{
     background: rgba(183, 85, 253);
     color: #fff;
     padding: 20px;
+    border-radius: 5px;
+    font-size: 25px;
+    
 }
-#boton:hover{
+#button:hover{
     cursor: pointer;
+    color:coral;
 }
-
-
 
 
 
@@ -115,7 +117,7 @@ max-width: 100%;
 footer{
     background: rgba(183, 85, 253);
     padding: 10px;
-    margin-top: 150px;
+    margin-top: 128px;
  }
  footer p{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -128,8 +130,3 @@ footer{
     font-size: 30px;
  }
 
- @media(max-width:480px){
-    form{
-        width: 100%;
-    }
- }

@@ -33,17 +33,32 @@
         </div>
     </header>--> <br> <br><br>
 <body>
-    <form action="" name="formulario" method="get">
-        
-            <h2>Contacto</h2>
-            
-                <input type="text" name="Nombre" placeholder="Nombre">
-                <input type="text" name="Apellido" placeholder="Apellido">
-                <input type="text" name="Email" placeholder="Email">
-                <input type="text" name="Telefono" placeholder="Telefono">
-                <textarea name="mensaje" placeholder="Dejanos un mensaje"></textarea>
-         <input type="button" value="Enviar" id="boton">
-
+    <form
+  action="https://formspree.io/f/xvoybnvo"
+  method="POST">
+  <label>
+    Tu email:
+    <input type="email" name="email">
+  </label>
+  
+  <label>
+    Nombre:
+    <input type="text" name="nombre">
+  </label>
+  <label>
+    Apellido:
+    <input type="text" name="apellido">
+  </label>
+  <label>
+    telefono:
+    <input type="text" name="nombre">
+  </label>
+  <label>
+    Tu message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit" id="button">Send</button>
 </form>
     <footer>
         <p>@Todos los derechos reservados.</p> <br>
@@ -54,6 +69,25 @@
         <p>Copyright©2022</p>
     </footer>   
    
-    <script src="main.js"></script>
+    <script >
+        const $form=document.querySelector('#form')
+        $form.addEventListener('submit', handlesubmit)
+        async function handlesubmit(event){
+            event.preventDefault()
+            const form=new FormData(this)
+            const response= await fetch(this.action,{
+            
+                method: this.method,
+                body: form,
+                headers:{
+                    'Accept':'application/json'
+                }
+            } )
+            if(response,ok){
+                this.reset()
+                alert('Gracias por contactarnos')
+            }
+        }
+    </script>
 </body>
 </html>
