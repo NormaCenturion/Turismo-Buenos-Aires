@@ -1,139 +1,145 @@
 *{
-    margin:0;
-    padding:0;
-    border:0 ;
-    font-size: 100% ;
-    vertical-align: baseline;
-    box-sizing: border-box;
+   margin:0;
+   padding:0;
+   border:0 ;
+   font-size: 100% ;
+   vertical-align: baseline;
+   box-sizing: border-box;
 }
 
 body {
-    text-align: center;
-    
-    
+   text-align: center;
+   
+   
 }
 
 .header {
-    display: flex;
-    justify-content:  center;
-    align-items: center;
+   display: flex;
+   justify-content:  center;
+   align-items: center;
 }
 
 .cabecera {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px;
-    background: rgba(183, 85, 253);
-    position: fixed;
-    width: 100%;
-    z-index: 100;
+   background-position:top;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   height: 100px;
+   background: rgba(183, 85, 253);
+   
+   width: 100%;
+   z-index: 100;
 }
 
 .navbar {
-    display: flex;
-    margin-right: 20px;
-    
+   display: flex;
+   margin-right: 20px;
+   
 }
 
-.banner{
-   height: 60vh !important;
-   background: url(imagenes/buenos-aires-dusk-cityscape-azajigub4hurh0d7.jpg) no-repeat center;
-   background-size: cover;
-   
-}
 .logo{
-   margin: 50px;
-   padding: 10px;
-   
+  margin: 50px;
+  padding: 10px;
+  
 }
 .logo p{
    display: block;
+ }
+ 
+ 
+
+
+
+.banner{
+  height: 60vh !important;
+  background: url(imagenes/buenos-aires-dusk-cityscape-azajigub4hurh0d7.jpg) no-repeat center;
+  background-size: cover;
+  
 }
 
 
-   
-   
-   
+  
+  
+  
 
 
 .navbar a {
-    display: block;
-    padding: 30px 30px;
-    font-family: 'Poiret One', cursive;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 30px;
-    color:#fff;
+   display: block;
+   padding: 30px 30px;
+   font-family: 'Poiret One', cursive;
+   text-decoration: none;
+   text-transform: uppercase;
+   font-size: 30px;
+   color:#fff;
 }
 
 .navbar a:hover {
-    
- color: rgb(255, 130, 5);
-    
+   
+color: rgb(255, 130, 5);
+   
 }
- 
 
- p {
-   display: inline-block;
-    font-family: 'Poiret One', cursive;
-    font-size: 35px;
-    color:black;
-    padding: 10px;
-    width: 90%;
-    position: relative;
-    
+
+p {
+  display: inline-block;
+   font-family: 'Poiret One', cursive;
+   font-size: 35px;
+   color:black;
+   padding: 10px;
+   width: 90%;
+   position: relative;
    
   
- }
- .principal p{
-   
-   font-family: 'Poiret One', cursive;
-   font-size: 30px;
-   padding: 10px;
-   
-
-
- }
- h1{
-   
-   font-family: 'Poiret One', cursive;
-   font-size: 60px;
-   padding: 10px;
- }
  
+}
+.principal p{
+  
+  font-family: 'Poiret One', cursive;
+  font-size: 30px;
+  padding: 10px;
+  
+
+
+}
+h1{
+  
+  font-family: 'Poiret One', cursive;
+  font-size: 60px;
+  padding: 10px;
+}
+
+  
+
+
+  
    
 
 
+.imagen{
+   padding: 15px;
+   width: 450px;
+   height: 50%;
+   overflow: hidden;
+   margin: 20px;
+   text-align: left;
+   transition: all 0.25s;
+   background:rgba(24, 30, 33, 0.5);
    
-    
-
- 
- .imagen{
-    padding: 15px;
-    width: 450px;
-    height: 50%;
-    overflow: hidden;
-    margin: 20px;
-    text-align: left;
-    transition: all 0.25s;
-    background:rgba(24, 30, 33, 0.5);
-    
+  
    
-    
- }
- .imagen:hover{
-    
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0);
-    
- }
- h3{
-   font-family:'Poiret One', cursive;
-    color: black ;
-    font-size: 50px;
-    text-decoration: underline overline rgb(255, 130, 5, 0.5);
- }
+}
+.imagen:hover{
+   
+   transform: translateY(-15px);
+   box-shadow: 0 12px 16px rgba(0, 0, 0);
+   
+}
+h3{
+  font-family:'Poiret One', cursive;
+   color: black ;
+   font-size: 50px;
+   text-decoration: underline overline rgb(255, 130, 5, 0.5);
+}
 
 
 
@@ -142,80 +148,42 @@ body {
 
 
 
- .btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 40px;
-    border: none;
-    color: #fff;
-    text-decoration: none;
-    background: rgba(183, 85, 253);
-    border-radius: 5px;
- }
+.btn {
+   display: inline-block;
+   margin-top: 15px;
+   padding: 10px 40px;
+   border: none;
+   color: #fff;
+   text-decoration: none;
+   background: rgba(183, 85, 253);
+   border-radius: 5px;
+}
 
- .btn:hover {
-    background: rgb(137, 11, 227); 
- }
- 
- .btn-home { 
-    display: flex;
+.btn:hover {
+   background: rgb(137, 11, 227); 
+}
 
- }
+.btn-home { 
+   display: flex;
 
- .btn-home a {
-    margin: 0 10px;
- }
+}
+
+.btn-home a {
+   margin: 0 10px;
+}
 
 footer{
-   background: rgba(183, 85, 253);
-   padding: 10px;
+  background: rgba(183, 85, 253);
+  padding: 10px;
 }
 footer p{
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-   font-size: 15px;
-   color: #fff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  color: #fff;
 }
 footer i{
-   color: #fff;
-   padding:20px;
-   font-size: 30px;
+  color: #fff;
+  padding:20px;
+  font-size: 30px;
 }
 
-@media only screen and (max-width: 600px){
-   .cabecera{
-      color: black;
-      
-     
-      position: relative;
-      margin-top:0;
-   }
-   .navbar{
-      background: rgba(183, 85, 253);
-      display: inline-block;
-      margin-right: 0;
-      text-align: right;
-     
-      
-      margin-top: 250px;
-      text-align: center;
-      padding: 50px;
-   }
-   .logo{
-      overflow: hidden;
-      margin-left: 5px;
-   }
-   
-}
-@media only screen and (min-width: 600px){
-
-}
-@media only screen and (min-width: 768px){
-
-}
-@media only screen and (min-width: 992px){
-
-}
-@media only screen and (min-width: 1200px){
-
-}
- 
