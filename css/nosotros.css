@@ -106,4 +106,40 @@ h2 {
     font-size: 30px;
  }
 
+ @media only screen and (max-width:768px) {
+    .cabecera{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 100px;
+        position: fixed;
+        width: 100%;
+        z-index: 100;    
+    }  
+    
+    .logo {
+        margin: 0.3px;
+    }
+     
+    }
  
+    @media only screen and (max-width:400px){
+        .cabecera{
+            color: black;
+            position:relative;
+            margin-top: 0;
+        
+        }
+    
+        .navbar{
+            background: rgba(183, 85, 253);
+            display: inline-block;
+            margin-right: 20px;
+            margin-top: 0;
+            text-align: center;   
+        }
+        .logo{
+            overflow:hidden
+        }
+    }
