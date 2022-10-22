@@ -181,5 +181,41 @@ footer i{
    font-size: 30px;
 }
 
+@media only screen and (max-width: 600px){
+   .cabecera{
+      color: black;
+      
+     
+      position: relative;
+      margin-top:0;
+   }
+   .navbar{
+      background: rgba(183, 85, 253);
+      display: inline-block;
+      margin-right: 0;
+      text-align: right;
+     
+      
+      margin-top: 250px;
+      text-align: center;
+      padding: 50px;
+   }
+   .logo{
+      overflow: hidden;
+      margin-left: 5px;
+   }
+   
+}
+@media only screen and (min-width: 600px){
 
+}
+@media only screen and (min-width: 768px){
+
+}
+@media only screen and (min-width: 992px){
+
+}
+@media only screen and (min-width: 1200px){
+
+}
  
