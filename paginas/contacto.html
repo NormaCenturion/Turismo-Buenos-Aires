@@ -33,33 +33,65 @@
         </div>
     </header>--> <br> <br><br>
 <body>
-    <form
-  action="https://formspree.io/f/xvoybnvo"
-  method="POST">
-  <label>
-    Tu email:
-    <input type="email" name="email">
-  </label>
-  
-  <label>
-    Nombre:
-    <input type="text" name="nombre">
-  </label>
-  <label>
-    Apellido:
-    <input type="text" name="apellido">
-  </label>
-  <label>
-    telefono:
-    <input type="text" name="nombre">
-  </label>
-  <label>
-    Tu message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit" id="button">Send</button>
-</form>
+
+      
+      <form action="#!" method="" class="text-center border border-light p-5">
+          <div class="md-form">
+            <label for="nombre"class="textofuente" >Nombre: </label>
+              <input type="text" name="nombre" id="nombre" class="form-control" required> 
+              
+          </div>
+
+          <div class="md-form">
+            <label for="email"class="textofuente">Email: </label>
+              <input type="email" name="email" id="email" class="form-control" required>
+              
+          </div>
+
+          <div class="md-form">
+            <label for="number"class="textofuente">Telefono: </label>
+              <input type="text" name="number" id="number" class="form-control" required>
+              
+          </div>
+
+          
+
+          <div class="md-form">
+            <label for="mensaje" class="textofuente">Mensaje: </label>
+              <textarea name="mensaje" id="mensaje" class="form-control md-textarea" required></textarea>
+              
+          </div>
+          <br>
+          <button class="btn btn-info" type="submit" id="button">ENVIAR</button>
+      </form>
+      <script>
+        
+        const $formulario = document.querySelector("#formulario"),
+            $nombre = document.querySelector("#nombre");
+
+        $formulario.onsubmit = evento => {
+            evento.preventDefault();
+            const nombre = $nombre.value;
+
+            
+            if (nombre.length == 0) {
+                alert("Debe ingresar un nombre");
+                return;
+            }
+
+            $formulario.submit();
+        };
+    </script>
+
+
+
+
+   
+
+
+
+
+
     <footer>
         <p>@Todos los derechos reservados.</p> <br>
         <a href="#" ><i class="fa-brands fa-facebook"></i></a>
